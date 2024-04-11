@@ -4,53 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>العاصمه نيوز</title>
-    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- <link rel="stylesheet" href="./css/all.min.css" /> -->
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header>
       <!-- ^=====> top header -->
-      <div id="search">
-        <span>بحث</span>
-        <i id="fa-solid fa-magnifying-glass"></i>
-      </div>
-      <div id="contact">
-        <span>مدينه نصر</span>
-        
-        <a href="mailto:alaasema.news@hotmail.com">alaasema.news@hotmail.com</a>
-      </div>
-      <div id="socal">
-    
-        <span> الخميس 21 مارس 2024</span>
+      <div class="nav" id="nav">
+        <div class="contanier">
+          <div class="socal">
+            <span> الخميس 21 مارس 2024</span>
+          </div>
+
+          <div class="contact">
+            <a href="mailto:alaasema.news@hotmail.com"
+              >alaasema.news@hotmail.com</a
+            >
+            <div class="mail">راسلنا</div>
+            <span>مدينه نصر</span>
+          </div>
+
+          <div class="box-search">
+            <span>بحث</span>
+            <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+            <div class="search">بحث</div>
+          </div>
+        </div>
       </div>
       <!-- ^=====>  header content -->
-      <div id="logo">
-        <img
-          src="https://restful.alaasema.news/logos/qTvvfo9i1FeBVm6drWYUtEsTqME2yynVLGx3vB2w.png"
-          width="200"
-          alt="العاصمه نيوز"
-        />
-      </div>
-      <div id="info">
-        <h3>رئيس التحرير</h3>
-        <h4>محمد سامى</h4>
-        <h3>المدير التنفيذى</h3>
-        <h4>حسام الجزار</h4>
+      <div class="header-content">
+        <div class="contanier">
+          <div class="logo">
+            <img
+              src="https://restful.alaasema.news/logos/qTvvfo9i1FeBVm6drWYUtEsTqME2yynVLGx3vB2w.png"
+              width="200"
+              alt="العاصمه نيوز"
+            />
+          </div>
+          <div class="info">
+            <h3>رئيس التحرير</h3>
+            <h4>محمد سامى</h4>
+            <h3>المدير التنفيذى</h3>
+            <h4>حسام الجزار</h4>
+          </div>
+        </div>
       </div>
 
       <!-- ^=====>  Navbar -->
-      <a href="#">الرئيسيه</a>
-      <a href="#">اخبار مصر</a>
-      <a href="#">اقتصاد</a>
-      <a href="#">حوادث وقضايا</a>
-      <a href="#">رياضه</a>
-      <a href="#">محافظات </a>
-      <a href="#">عربي ودولي</a>
-      <a href="#">تقارير وتحقيقات</a>
-      <a href="#">المزيد</a>
+      <div class="links">
+        <div class="contanier">
+          <a class="main" href="#">الرئيسيه</a>
+          <a href="#">اخبار مصر</a>
+          <a href="#">اقتصاد</a>
+          <a href="#">حوادث وقضايا</a>
+          <a href="#">رياضه</a>
+          <a href="#">محافظات </a>
+          <a href="#">عربي ودولي</a>
+          <a href="#">تقارير وتحقيقات</a>
+          <a href="#">المزيد</a>
+        </div>
+      </div>
     </header>
 
     <main>
-      <section id="News">
+      <!-- <section id="News">
         <h2>افتتاح معرض لابيزيج للكتاب في المانيا</h2>
         <span>عربي ودولي</span>
         <div>عاجل...لندن: روسيا تواصل تركيز عملياتها في دونيتسك بشرق..</div>
@@ -117,81 +134,108 @@
         </div>
         <p>#فوائد_مسابقات_القرآن الكريم</p>
         <h4>#حافظ_عمر_حافظ</h4>
-      </aside>
-      <section id="egypt-news">
+      </aside> -->
+      <section id="egypt-news" class="egypt-news">
         <h2>أخبار مصر</h2>
-        <div id="main-new">
-          <img
-            src="https://restful.alaasema.news/data/15550147_p.jpeg"
-            alt=""
-          />
-          <p>
-            عاجل...سفير اليابان بالقاهرة: رفع مستوى العلاقات مع مصر إلى مستوى
-            الشراكة الاستر...
-          </p>
-          <span>منذ 5 ساعات</span>
-          <br />
-          <button>اقرأ المزيد</button>
+        <div id="main-new" class="main-new">
+          <div class="image">
+            <img
+              src="https://restful.alaasema.news/data/15550147_p.jpeg"
+              alt=""
+            />
+            <span class="layer">اخبار مصر</span>
+          </div>
+          <div class="text">
+            <p>
+              عاجل...سفير اليابان بالقاهرة: رفع مستوى العلاقات مع مصر إلى مستوى
+              الشراكة الاستر...
+            </p>
+            <span>منذ 5 ساعات</span>
+            <br />
+            <button>اقرأ المزيد</button>
+          </div>
         </div>
-        <div id="sub-new">
-          <img
-            width="150"
-            src="https://restful.alaasema.news/data/176536.jpg"
-            alt=""
-          />
-          <p>
-            عاجل...وزير الخارجية الأمريكي يصل إلى القاهرة لإجراء مباحثات بشأن
-            غزة
-          </p>
-          <span>منذ 5 ساعات</span>
-          <br />
-          <button>اقرأ المزيد</button>
-        </div>
-        <div id="sub-new">
-          <img
-            width="150"
-            src="https://restful.alaasema.news/data/15549983%20(1).jpg"
-            alt=""
-          />
-          <p>
-            عاجل...تطوير أول تطبيق إلكتروني يقدم محفزات استثمارية ومزايا
-            للمصريين بالخارج
-          </p>
-          <span>منذ 5 ساعات</span>
-          <br />
-          <button>اقرأ المزيد</button>
-        </div>
-        <div id="sub-new">
-          <img
-            width="150"
-            src="https://restful.alaasema.news/data/%D8%AD%D8%B1%D9%8A$$$$$$$$$%D9%8288855.jpg"
-            alt=""
-          />
-          <p>
-            عاجل...طلب إحاطة بمجلس النواب للحد من نشوب الحرائق ومحاكمة إهمال
-            المتسببين فيها
-          </p>
-          <span>منذ 5 ساعات</span>
-          <br />
-          <button>اقرأ المزيد</button>
-        </div>
-        <div id="sub-new">
-          <img
-            width="150"
-            src="https://restful.alaasema.news/data/cairointermatio$$$$$$$$$$$$$$$$$$$$$$$$$$nalairport%20(1).jpg"
-            alt=""
-          />
-          <p>
-            عاجل...النائب إيهاب رمزي يقدم طلب إحاطة حول طرح مناقصة لإدارة وتشغيل
-            المطارات ال...
-          </p>
-          <span>منذ 5 ساعات</span>
-          <br />
-          <button>اقرأ المزيد</button>
+        <div class="cards">
+          <div class="first-card">
+            <div class="sub-new">
+              <div class="image">
+                <img
+                  width="150"
+                  src="https://restful.alaasema.news/data/176536.jpg"
+                  alt=""
+                />
+                <span>اخبار مصر</span>
+              </div>
+              <div class="text">
+                <p>
+                  عاجل...وزير الخارجية الأمريكي يصل إلى القاهرة لإجراء مباحثات
+                  بشأن غزة
+                </p>
+                <span>منذ 5 ساعات</span>
+                <button>اقرأ المزيد</button>
+              </div>
+            </div>
+            <div class="sub-new">
+              <div class="image">
+                <img
+                  width="150"
+                  src="https://restful.alaasema.news/data/15549983%20(1).jpg"
+                  alt=""
+                />
+                <span>اخبار مصر</span>
+              </div>
+              <div class="text">
+                <p>
+                  عاجل...تطوير أول تطبيق إلكتروني يقدم محفزات استثمارية ومزايا
+                  للمصريين بالخارج
+                </p>
+                <span>منذ 5 ساعات</span>
+                <button>اقرأ المزيد</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="sub-new">
+            <div class="image">
+              <img
+                width="150"
+                src="https://restful.alaasema.news/data/%D8%AD%D8%B1%D9%8A$$$$$$$$$%D9%8288855.jpg"
+                alt=""
+              />
+              <span>اخبار مصر</span>
+            </div>
+            <div class="text">
+              <p>
+                عاجل...طلب إحاطة بمجلس النواب للحد من نشوب الحرائق ومحاكمة إهمال
+                المتسببين فيها
+              </p>
+              <span>منذ 5 ساعات</span>
+              <button>اقرأ المزيد</button>
+            </div>
+          </div>
+          <div class="sub-new">
+            <div class="image">
+              <img
+                width="150"
+                src="https://restful.alaasema.news/data/cairointermatio$$$$$$$$$$$$$$$$$$$$$$$$$$nalairport%20(1).jpg"
+                alt=""
+              />
+              <span>اخبار مصر</span>
+            </div>
+
+            <div class="text">
+              <p>
+                عاجل...النائب إيهاب رمزي يقدم طلب إحاطة حول طرح مناقصة لإدارة
+                وتشغيل المطارات ال...
+              </p>
+              <span>منذ 5 ساعات</span>
+              <button>اقرأ المزيد</button>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="ecommerce">
+      <!-- <section id="ecommerce">
         <h2>اقتصاد</h2>
         <div id="main-div">
           <img
@@ -326,13 +370,10 @@
             src="https://restful.alaasema.news/data/%D9%83%D8%AD%D8%AE%D8%AE%D8%AE%D8%AE%D8%AE%D8%AE%D8%AE%D8%AE%D8%AE%D8%AE%D8%AE%D8%AE%D8%AE%D8%AE%D8%AE%D8%AE%D8%AE%D8%AE%D8%AE%D8%AE%D8%AE%D8%AF%D8%AF%D8%AF%D8%AF%D8%AF%D8%AF%D8%AF%D8%AF%D8%AF%D8%AF%D8%AF%D8%AF%D8%AF%D8%AF%D8%AF%D8%AF%D8%AF%D8%AF%D8%AF%D8%AF%D8%AF%D8%AF%D8%AF%D8%AF%D8%AF%D8%AF%D8%AF%D8%AF%D8%AF.jpeg"
             alt=""
           />
-          <p>
-            سلمى أبو ضيف والمدفعجية في أغنية أعلى نسبة مشاهدة
-          </p>
+          <p>سلمى أبو ضيف والمدفعجية في أغنية أعلى نسبة مشاهدة</p>
           <span>منذ يوم</span>
           <button>اقرأ المزيد</button>
         </div>
-
 
         <div id="sub-new">
           <img
@@ -340,13 +381,11 @@
             src="https://restful.alaasema.news/data/%D9%83%D9%83%D8%AD%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC%D8%AC.jpeg"
             alt=""
           />
-          <p>
-            صناع مسلسل الكبير أوي 8 يعلنون انتهاء تصوير جميع المشاهد          </p>
+          <p>صناع مسلسل الكبير أوي 8 يعلنون انتهاء تصوير جميع المشاهد</p>
           <spaى>منذ يوم</spaى>
           <br />
           <button>اقرأ المزيد</button>
         </div>
-
 
         <div id="sub-new">
           <img
@@ -354,14 +393,11 @@
             src="https://restful.alaasema.news/data/15549166.jpg"
             alt=""
           />
-          <p>خالد دياب عن أبطال مسلسل أشغال شقة: تشكيل منتخب مصر في اللذاذة
-
-          </p>
+          <p>خالد دياب عن أبطال مسلسل أشغال شقة: تشكيل منتخب مصر في اللذاذة</p>
           <span>منذ يوم </span>
           <br />
           <button>اقرأ المزيد</button>
         </div>
-
 
         <div id="sub-new">
           <img
@@ -370,14 +406,13 @@
             alt=""
           />
           <p>
-            حميد الشاعري: أسامة كمال يستحق جائزة أفضل إعلامي.. واجهة مشرفة جدا لمصر
-
+            حميد الشاعري: أسامة كمال يستحق جائزة أفضل إعلامي.. واجهة مشرفة جدا
+            لمصر
           </p>
           <span>منذ يوم </span>
           <br />
           <button>اقرأ المزيد</button>
         </div>
-
 
         <div id="sub-new">
           <img
@@ -386,8 +421,8 @@
             alt=""
           />
           <p>
-            صفاء أبو السعود تواجه عصابة سرقة الآثار في حلقة جديدة من المسلسل الإذاعي يوميات ...
-
+            صفاء أبو السعود تواجه عصابة سرقة الآثار في حلقة جديدة من المسلسل
+            الإذاعي يوميات ...
           </p>
           <span>منذ يوم </span>
           <br />
@@ -396,18 +431,13 @@
       </section>
 
       <footer>
-        <div id="copyright">
-            جميع الحقوق محفوظة - العاصمة نيوز © 2024
-
-        </div>
+        <div id="copyright">جميع الحقوق محفوظة - العاصمة نيوز © 2024</div>
 
         <a href="#">
-            crafted by
-            <span>crafted internet</span>
+          crafted by
+          <span>crafted internet</span>
         </a>
-
-
-      </footer>
+      </footer> -->
     </main>
   </body>
 </html>

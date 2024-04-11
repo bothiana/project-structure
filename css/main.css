@@ -1,0 +1,301 @@
+/* ^###########General style */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  direction: rtl;
+}
+
+.contanier {
+  width: 90%;
+  margin: auto;
+}
+
+a,
+span {
+  display: inline-block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* ^############# top header */
+.nav {
+  background-color: black;
+
+  color: #eee;
+}
+
+.box-search {
+  position: relative;
+}
+
+.search {
+  background-color: #000e;
+  border-radius: 2px;
+  width: fit-content;
+  padding: 10px;
+  position: absolute;
+  top: 110%;
+  left: 20px;
+  font-size: 18px;
+  opacity: 0;
+  transition: 1s all;
+}
+
+.box-search:hover .search {
+  opacity: 1;
+}
+
+.nav .contanier {
+  display: flex;
+  justify-content: space-between;
+}
+.contact {
+  position: relative;
+}
+
+.contact .mail {
+  background-color: #000e;
+  border-radius: 2px;
+  width: fit-content;
+  padding: 10px;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  font-size: 18px;
+  opacity: 0;
+  transition: 0.5s opacity;
+}
+
+.contact:hover .mail {
+  opacity: 1;
+}
+
+.nav .box-search span {
+  font-size: 20px;
+  padding-block: 10px;
+}
+.nav .contact span,
+a {
+  padding-block: 10px;
+}
+
+.nav .socal span {
+  padding: 10px;
+  background-color: #cf112d;
+  font-size: 20px;
+  color: #fff;
+}
+/* ^########### header content */
+
+.header-content {
+  padding-block: 20px;
+}
+
+.header-content .contanier {
+  display: flex;
+  justify-content: start;
+}
+
+.header-content .logo {
+  margin-left: 40px;
+}
+.header-content .logo img {
+  width: 250px;
+}
+
+.header-content .info h3 {
+  color: #666;
+  margin-bottom: 10px;
+}
+.header-content .info h4 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+/* ^############Navbar */
+
+.links {
+  background-color: rgba(0, 0, 0, 0.842);
+  margin-bottom: 15px;
+}
+
+.links .main {
+  background-color: #cf112d;
+}
+
+.links a {
+  color: #fff;
+  margin-left: 30px;
+  font-size: 20px;
+  padding: 10px;
+
+  transition: 0.5s background-color;
+}
+
+.links a:hover {
+  background-color: #cf112d;
+}
+
+/* ^########### egypt news */
+
+.egypt-news {
+  background-color: rgba(0, 0, 0, 0.836);
+  width: 70%;
+  padding: 25px;
+  color: #fff;
+  margin: auto;
+}
+
+.egypt-news h2 {
+  padding: 10px 15px;
+  font-size: 21px;
+  color: #fff;
+  border-bottom: 1px solid #eeeeee49;
+  transition: 0.5s color;
+  position: relative;
+}
+.egypt-news h2::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #cf112d;
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+}
+
+.egypt-news h2:hover {
+  color: red;
+}
+
+.egypt-news .main-new {
+  padding-block: 20px;
+  display: flex;
+  border-bottom: 1px solid #eeeeee49;
+}
+
+.first-card {
+  border-bottom: 1px solid #eeeeee49;
+  display: flex;
+  padding-block: 15px;
+}
+
+.main-new .image {
+  width: 25%;
+  position: relative;
+}
+
+.main-new .layer {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #cf112d75;
+  padding: 8px;
+  transition: 0.5s background-color;
+}
+.main-new img {
+  transition: 0.5s transform;
+}
+.egypt-news .main-new:hover img {
+  transform: scale(1.1);
+}
+.main-new .image:hover .layer {
+  background-color: #cf112d;
+}
+
+.main-new .image img {
+  border: 5px solid #fff;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.main-new .text {
+  width: 75%;
+  padding: 20px;
+}
+.main-new .text p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.main-new .text span {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.main-new .text button {
+  color: #fff;
+  padding: 9px;
+  background-color: #cf112d;
+  border: none;
+  font-size: 18px;
+}
+.egypt-news .cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.egypt-news .sub-new {
+  width: 50%;
+  display: flex;
+  padding: 10px;
+  padding-top: 20px;
+  transition: 1s transform;
+}
+.egypt-news .sub-new img {
+  transition: 0.5s transform;
+}
+
+.egypt-news .sub-new:hover img {
+  transform: scale(1.1);
+}
+
+.sub-new .image img {
+  border: 3px solid #fff;
+}
+.sub-new .image {
+  position: relative;
+}
+
+.sub-new .image span {
+  background-color: #cf112d75;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 8px;
+  transition: 0.5s background-color;
+}
+
+.sub-new .image:hover span {
+  background-color: #cf112d;
+}
+
+.sub-new .text {
+  padding-right: 10px;
+}
+
+.sub-new .text p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.sub-new .text button {
+  background-color: #cf112d;
+  border: none;
+  margin-right: 20px;
+  color: #fff;
+  padding: 8px;
+}
